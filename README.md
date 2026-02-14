@@ -19,11 +19,24 @@ Each stage pauses for your input — continue, regenerate, or adjust before movi
 
 ## Install
 
-```bash
-claude install-skill /path/to/startup-ideas.skill
+### From Claude Code (recommended)
+
+Add the marketplace and install the plugin:
+
+```
+/plugin marketplace add CyranoB/startup-ideas-skill
+/plugin install startup-ideas@startup-ideas-marketplace
 ```
 
-Or copy the `startup-ideas/` directory into your Claude Code skills folder.
+### Manual install
+
+Clone the repo and copy the skill into your Claude skills directory:
+
+```bash
+git clone https://github.com/CyranoB/startup-ideas-skill.git
+mkdir -p ~/.claude/skills/startup-ideas
+cp -r startup-ideas-skill/skills/startup-ideas/* ~/.claude/skills/startup-ideas/
+```
 
 ## Usage
 
@@ -37,8 +50,12 @@ Ask Claude anything related to startup planning:
 ## Structure
 
 ```
-startup-ideas/
-├── SKILL.md                  # Workflow and interaction protocol
-└── references/
-    └── prompts.md            # Output formats for all 8 stages
+.claude-plugin/
+├── plugin.json               # Plugin metadata and configuration
+└── marketplace.json          # Marketplace manifest for distribution
+skills/
+└── startup-ideas/
+    ├── SKILL.md              # Workflow and interaction protocol
+    └── references/
+        └── prompts.md        # Output formats for all 8 stages
 ```

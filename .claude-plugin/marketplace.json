@@ -1,0 +1,18 @@
+{
+  "name": "startup-ideas-marketplace",
+  "owner": {
+    "name": "CyranoB"
+  },
+  "metadata": {
+    "description": "Startup ideation skills for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "startup-ideas",
+      "source": "./",
+      "description": "Interactive startup ideation and planning pipeline — 8 stages from idea generation to landing page outline",
+      "version": "1.0.0",
+      "keywords": ["startup", "ideation", "business", "planning"]
+    }
+  ]
+}

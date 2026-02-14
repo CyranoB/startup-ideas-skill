@@ -1,0 +1,12 @@
+{
+  "name": "startup-ideas",
+  "version": "1.0.0",
+  "description": "Interactive startup ideation and planning pipeline — 8 stages from idea generation to landing page outline",
+  "author": {
+    "name": "CyranoB"
+  },
+  "repository": "https://github.com/CyranoB/startup-ideas-skill",
+  "license": "MIT",
+  "keywords": ["startup", "ideation", "business", "planning"],
+  "skills": "./skills/"
+}
