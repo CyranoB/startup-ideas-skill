@@ -7,6 +7,5 @@
   },
   "repository": "https://github.com/CyranoB/startup-ideas-skill",
   "license": "MIT",
-  "keywords": ["startup", "ideation", "business", "planning"],
-  "skills": "./skills/"
+  "keywords": ["startup", "ideation", "business", "planning"]
 }
